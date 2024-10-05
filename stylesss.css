@@ -335,7 +335,7 @@ section {
 
 @media screen and (max-width: 480px) {
     .Cuadros_inicio {
-        padding: 80px; /* Ajustar padding en pantallas muy pequeñas */
+        padding: 20px; /* Ajustar padding en pantallas muy pequeñas */
     }
 
     .Fila_mision_vision {
