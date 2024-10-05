@@ -461,13 +461,43 @@ section {
 }
 
 .Texto_producto_uno, .Texto_producto_Dos {
-    font-size: 1.4rem;
-    line-height: 1.6;
-    width: 100%; 
-    margin-left: 40px;
-    margin-right: 40px;
-    overflow-x: hidden;
+    font-size: 1.4rem; /* Tamaño de fuente por defecto */
+    line-height: 1.6; /* Altura de línea por defecto */
+    width: 100%; /* Ancho completo */
+    margin-left: 40px; /* Margen izquierdo */
+    margin-right: 40px; /* Margen derecho */
+    overflow-x: hidden; /* Ocultar desbordamiento horizontal */
 }
+
+/* Media Queries para Responsividad */
+
+/* Pantallas grandes */
+@media (min-width: 1200px) {
+    .Texto_producto_uno, .Texto_producto_Dos {
+        font-size: 1.4rem; /* Tamaño de fuente para pantallas grandes */
+        margin-left: 40px; /* Margen izquierdo */
+        margin-right: 40px; /* Margen derecho */
+    }
+}
+
+/* Pantallas medianas */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .Texto_producto_uno, .Texto_producto_Dos {
+        font-size: 1.2rem; /* Reducir tamaño de fuente para pantallas medianas */
+        margin-left: 40px; /* Ajustar márgenes */
+        margin-right: 40px; /* Ajustar márgenes */
+    }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 767px) {
+    .Texto_producto_uno, .Texto_producto_Dos {
+        font-size: 1rem; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+        margin-left: 30px; /* Ajustar márgenes */
+        margin-right: 30px; /* Ajustar márgenes */
+    }
+}
+
 
 /* Título de materiales */
 .Materiales_titulo {
