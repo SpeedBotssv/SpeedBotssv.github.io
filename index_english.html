@@ -207,7 +207,7 @@
                 <section class="Cuadro descarga">
                     <h1 class="Titulo_cuadro_descarga">APPLICATION</h1>
                     <p class="Parrafo_cuadro_descarga">You can download the remote control application for SpeedBots through the following button.</p>
-                    <a href="SpeedBots.apk" class="Boton_descarga_cuadro" download="">DOWNLOAD</a>
+                    <a href="SpeedBotsappofficial.apk" class="Boton_descarga_cuadro" download="">DOWNLOAD</a>
                 </section>
             </section>
         </section>
@@ -280,118 +280,143 @@
         <textarea name="message" required></textarea>
         <input type="submit" value="Enviar">
     </form>
-<style>
-    *.contact-form{
-        margin: 10px;
-        padding: 10px;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-        background-color: #520247; /* Fondo negro */
-        color: #ffffff; /* Color de texto blanco */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-    }
+    <style>
+        .contact-form {
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            background-color: #520247; /* Fondo negro */
+            color: #ffffff; /* Color de texto blanco */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        main {
+            background: #fff;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            width: 90%;
+            max-width: 600px;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #11055c; /* Color atractivo para el encabezado */
+        }
+        
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 1em;
+            color: #29099b; /* Color de texto para las etiquetas */
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 8px rgb(73, 67, 67) double;
+            border-radius: 10px;
+            background-color: transparent; /* Fondo blanco para campos */
+            color: #333; /* Color de texto para campos */
+            font-size: 1em;
+            transition: background 0.3s ease;
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            background-color: #f0f0f0; /* Cambio de color al enfocar */
+            outline: none; /* Quitar el borde al enfocar */
+        }
+        
+        textarea {
+            resize: none; /* Evitar que el textarea cambie de tamaño */
+            height: 100px; /* Altura fija para el textarea */
+        }
+        
+        input[type="submit"] {
+            background: linear-gradient(135deg, rgb(3, 13, 160), rgb(146, 22, 170)); /* Degradado de colores para el botón */
+            color: #fcfcfa;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        input[type="submit"]:hover {
+            background: linear-gradient(135deg, #f79, #f06); /* Inversión de colores al pasar el ratón */
+        }
+        
+        #message {
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 5px;
+            display: none; /* Oculto por defecto */
+        }
+        
+        #message.success {
+            background-color: #9aeabc; /* Verde claro para éxito */
+            color: #333;
+        }
+        
+        #message.error {
+            background-color: #ff9393; /* Rojo claro para error */
+            color: #333;
+        }
     
-    main {
-        background: #fff;
-        justify-content: center;
-        align-items: center;
-        backdrop-filter: blur(10px);
-        width: 90%;
-        max-width: 600px;
-        border-radius: 20px;
-        padding: 30px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-        text-align: center;
-    }
+        /* Media Queries para hacer el formulario responsive */
+        @media (max-width: 768px) {
+            main {
+                padding: 20px; /* Menos padding en pantallas pequeñas */
+            }
     
-    h2 {
-        font-size: 2em;
-        margin-bottom: 20px;
-        color: #11055c; /* Color atractivo para el encabezado */
-    }
+            h2 {
+                font-size: 1.5em; /* Tamaño de fuente más pequeño para el encabezado */
+            }
     
-    label {
-        display: block;
-        margin: 10px 0 5px;
-        font-size: 1em;
-        color: #29099b; /* Color de texto para las etiquetas */
-    }
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                font-size: 0.9em; /* Tamaño de fuente más pequeño para los campos */
+            }
     
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        width: calc(100% - 20px);
-        padding: 10px;
-        margin-bottom: 20px;
-        border: 8px rgb(73, 67, 67) double;
-        border-radius: 10px;
-        background-color:transparent; /* Fondo blanco para campos */
-        color: #333; /* Color de texto para campos */
-        font-size: 1em;
-        transition: background 0.3s ease;
-    }
+            input[type="submit"] {
+                font-size: 0.9em; /* Tamaño de fuente más pequeño para el botón */
+            }
+        }
     
-    input[type="text"]:focus,
-    input[type="email"]:focus,
-    textarea:focus {
-        background-color: #f0f0f0; /* Cambio de color al enfocar */
-        outline: none; /* Quitar el borde al enfocar */
-    }
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.2em; /* Ajuste adicional para pantallas muy pequeñas */
+            }
     
-    textarea {
-        resize: none; /* Evitar que el textarea cambie de tamaño */
-        height: 100px; /* Altura fija para el textarea */
-    }
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                padding: 8px; /* Menos padding para campos en pantallas pequeñas */
+            }
+        }
+    </style>
     
-    input[type="submit"] {
-        background: linear-gradient(135deg, rgb(3, 13, 160), rgb(146, 22, 170)); /* Degradado de colores para el botón */
-        color: #fcfcfa;
-        border: none;
-        padding: 12px 20px;
-        border-radius: 25px;
-        font-size: 1em;
-        cursor: pointer;
-        transition: background 0.3s ease;
-    }
-    
-    input[type="submit"]:hover {
-        background: linear-gradient(135deg, #f79, #f06); /* Inversión de colores al pasar el ratón */
-    }
-    
-    #message {
-        margin: 20px 0;
-        padding: 10px;
-        border-radius: 5px;
-        display: none; /* Oculto por defecto */
-    }
-    
-    #message.success {
-        background-color: #9aeabc; /* Verde claro para éxito */
-        color: #333;
-    }
-    
-    #message.error {
-        background-color: #ff9393; /* Rojo claro para error */
-        color: #333;
-    }
-</style>
  </main>
 
 <!-- FIN PAGINA MIEMBROS -->
     </section>
 
-    <section id="oportunidades" class="content-section hidden">
-        <h2>Career Opportunities</h2>
-        <p>Explore the career opportunities we offer.</p>
-    </section>
-
-    <section id="contactanos" class="content-section hidden">
-        <h2>Contact us</h2>
-        <p>Get in touch with us for more information.</p>
-    </section>
     <!--Parte del quiz-->
 <section class="body">
     <!-- Cuadro inicial pequeño -->
