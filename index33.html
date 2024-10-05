@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rajdhani:wght@300;400;500;600;700&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <script src="javas.js" defer></script>
+    <script src="scriptt.js" defer></script>
+    <title>SmartDrive</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({ publicKey: "SIz-SmSVAee0F1GSa" });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('service_7wh98fp', 'contact_form', this)
+                    .then(() => {
+                        showMessage('Thank you for contacting us. We will reply to you soon.', 'success');
+                    }, (error) => {
+                        showMessage('Error sending message. Please try again.', 'error');
+                    });
+            });
+        }
+
+        function showMessage(message, type) {
+            const messageContainer = document.getElementById('message');
+            messageContainer.textContent = message;
+            messageContainer.className = type; // Añadir clase para estilos
+            messageContainer.style.display = 'block'; // Mostrar el mensaje
+        }
+    </script>
+</head>
+<body>
+    <!-- Encabezado principal -->
+    <header>
+        <section class="Encabezado_global" >
+
+            <div class="Contenedor_imagen_encabezado">
+                <img class="Imagen_encabezado" src="Imagenes/SD White.png" alt="">
+            </div>
+    
+            <div class="lenguaje">
+                <a href="index22.html" class="en_language">Spanish</a>
+                <a href="index33.html" class="en_language">Inglish</a>
+            </div>
+    
+            
+    
+        </section>
+       
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="#" onclick="showSection('inicio')">Home</a></li>
+            <li><a href="#" onclick="showSection('product')">Product</a></li>
+            <li><a href="#" onclick="showSection('members')">Members</a></li>
+    
+        </ul>
+    </nav>
+    
+
+    <!-- Contenido de la página -->
+    <section id="inicio" class="content-section visible">
+        <section class="Imagen_subpagina_inicio">
+            <div class="Titulos_subinicio"> 
+                <h1 class="Titulo_Speedbots_subinicio">SPEEDBOTS </h1>
+                <p class="Subtitulo_subinicio">Safety on wheels</p>
+            </div>
+    
+           
+        </section>
+        <section id="inicio" class="Pagina_inicio">
+
+            <section class="Cuadros_inicio">
+        
+                <div class="Cuadro_quienes_somos">
+                    <h1 class="Quienes_somos">WHO ARE WE?</h1>
+                    <img class="Quienes_somos_imagen" src="Imagenes/Grupo.png" alt="Quienes_somos_imagen">
+                    <p class="Quienes_somos_parrafo"> At Smart Drive, we are a team committed to innovation and road safety. Our focus is on creating practical technological solutions, such as SpeedBots, an intelligent vehicle designed to automatically brake when detecting obstacles, thus promoting road safety. We believe that technology can transform the way we move and improve our quality of life.</p>
+                </div>
+        
+                <section class="Fila_mision_vision">
+                    <div class="Cuadro_Mision">
+                        <h1 class="Mision">MISSION</h1>
+                        <img class="Mision_imagen" src="Imagenes/Diana.png" alt="Mision_imagen">
+                        <p class="Mision_parrafo">Develop innovative technological solutions that contribute to improving road safety by optimizing urban mobility through the integration of advanced technologies, seeking to contribute to the creation of a safe and sustainable environment. safer and more efficient driving. </p>
+                    </div>
+        
+                    <div class="Cuadro_Vision">  
+                        <h1 class="Vision"> VISION </h1>
+                        <img class="Vision_imagen" src="Imagenes/Ojo.png" alt="Vision_imagen">
+                        <p class="Vision_parrafo"> To be leaders in the creation of technologies for intelligent mobility that help transform road safety and the driving experience. We aspire to be recognized for our ability to innovate and apply technological solutions that make a significant difference in road safety.</p>
+                    </div>
+        
+    </section>
+    
+
+</section>
+
+</section>
+    </style>
+</section>
+
+<hr> <!-- Separador mientras no se utiliza CSS, luego borrar -->
+<!-- FIN PAGINA INICIO -->
+S
+    <section id="product" class="content-section hidden">
+        <section id="producto" class="Pagina_producto">
+
+            
+        
+            <h1 class="Titulo_producto">SPEEDBOTS</h1>
+        
+            <section class="Cuadros_de_informacion_producto">
+                <div class="Contenedor_producto">
+                    <img class="Imagen_producto_uno" src="Imagenes/speed2.jpg" alt="SpeedBot">
+                    <p class="Texto_producto_uno">
+                        The SpeedBot is designed to promote road safety through technology.
+                        Equipped with an advanced ultrasonic sensor, the vehicle is able to detect any object 20 cm away.
+                        Once it identifies an obstacle, the car brakes immediately, avoiding potential collisions.
+                        In addition to its automatic braking capability, the SpeedBot uses an intelligent decision-making system:
+                        after braking, it evaluates the available space around it, turning to the side that is free of obstructions.
+                        This capability is ideal for dense traffic environments, providing greater driving safety.
+                    </p>
+                </div>
+        
+                <div class="Contenedor_producto reverse">
+                    <p class="Texto_producto_Dos">
+                        The SpeedBot also includes remote control functionality through a mobile app we have developed.
+                        With the app, the user can drive the car with precision, making it a useful tool for both safe driving practice
+                        and exploring its technology in controlled spaces. Its design combines a robust chassis and a servo motor that ensures efficient and smooth turns.
+                        This car is a practical and educational tool that, in addition to its road safety functionality, offers an interactive experience for those who wish to learn more about automated driving technologies.
+                    </p>
+                    <img class="Imagen_producto_dos" src="Imagenes/speed3.jpg" alt="SpeedBot Control Remoto">
+                </div>
+            </section>
+        
+            <section class="Materiales_seccion">
+                <h1 class="Materiales_titulo">MATERIALS</h1>
+                
+                <div class="Material_grid">
+                    <div class="Material_item">
+                        <h1 class="Material_uno_dentro">CHASsIS</h1>
+                        <img class="Material_uno_imagen" src="Imagenes/chasis.jpg" alt="Chasis">
+                        <p class="Parrafo_material_uno">Strong plastic chassis to ensure lightness and durability. I used additional support structures to secure the motors and other components firmly.</p>
+                    </div>
+        
+                    <div class="Material_item">
+                        <h1 class="Material_dos_dentro">WHEELS</h1>
+                        <img class="Material_dos_imagen" src="Imagenes/Ruedas.jpg" alt="Ruedas">
+                        <p class="Parrafo_material_dos">Sturdy wheels suitable for varied terrain, making sure the axles were strong enough to support the weight of the vehicle and sudden movements.</p>
+                    </div>
+        
+                    <div class="Material_item">
+                        <h1 class="Material_tres_dentro">BLUETOOTH</h1>
+                        <img class="Material_tres_imagen" src="Imagenes/Bluetooth.jpg" alt="Bluetooth">
+                        <p class="Parrafo_material_tres">Bluetooth module for control remote, ensuring stable and efficient communication within the desired operating area.</p>
+                    </div>
+        
+                    <div class="Material_item">
+                        <h1 class="Material_cuatro_dentro">ARDUINO</h1>
+                        <img class="Material_cuatro_imagen" src="Imagenes/Arduino.jpg" alt="Arduino">
+                        <p class="Parrafo_material_cuatro">Arduino Uno simplifies configuration and programming. This Arduino controls both the vehicle's movement and the auto-sensing system.</p>
+                    </div>
+        
+                    <div class="Material_item">
+                        <h1 class="Material_cinco_dentro">H BRIDGE</h1>
+                        <img class="Material_cinco_imagen" src="Imagenes/Puente H L298N.jpg" alt="Puente H">
+                        <p class="Parrafo_material_cinco">It reverses the polarity of the current that reaches the motor, which causes the motor to change direction. This is essential for a remote control car, as it allows the vehicle to move forward or backward as needed.</p>
+                    </div>
+        
+                    <div class="Material_item">
+                        <h1 class="Material_seis_dentro">MOTORS</h1>
+                        <img class="Material_seis_imagen" src="Imagenes/Motores DC.jpg" alt="Motores DC">
+                        <p class="Parrafo_material_seis">DC motors for propulsion, implementing an H bridge to control the direction of rotation. This allows them to move forward and backward using the L293D chip.</p>
+                    </div>
+        
+                    <div class="Material_item">
+                        <h1 class="Material_siete_dentro">SERVOMOTOR</h1>
+                        <img class="Material_siete_imagen" src="Imagenes/Servomotor.jpg" alt="Servomotor">
+                        <p class="Parrafo_material_siete">It receives the information sent from the pins, allowing it to give the order to the wheels to move in the direction and at the speed that is being requested.</p>
+                    </div>
+        
+                    <div class="Material_item">
+                        <h1 class="Material_ocho_dentro">ULTRASONIC SENSOR</h1>
+                        <img class="Material_ocho_imagen" src="Imagenes/Sensor.jpg" alt="Sensor Ultrasonico">
+                        <p class="Parrafo_material_ocho">PIR sensor for automatic detection of obstacles and other vehicles. We adjust the sensitivity parameters for fast and accurate responses during testing.</p>
+                    </div>
+        
+                    <div class="Material_item">
+                        <h1 class="Material_nueve_dentro">BATTERIES</h1>
+                        <img class="Material_nueve_imagen" src="Imagenes/Baterias Recargables.jpg" alt="Baterías Recargables">
+                        <p class="Parrafo_material_nueve">Rechargeable batteries to power the Arduino and motors, correctly calculating the battery capacity to maintain the desired operating duration.</p>
+                    </div>
+                </div>
+        
+                <section class="Cuadro descarga">
+                    <h1 class="Titulo_cuadro_descarga">APPLICATION</h1>
+                    <p class="Parrafo_cuadro_descarga">You can download the remote control application for SpeedBots through the following button.</p>
+                    <a href="Imagenes/Arduino.jpg" class="Boton_descarga_cuadro" download="">DOWNLOAD</a>
+                </section>
+            </section>
+        </section>
+        
+    </section>
+
+    <section id="members" class="content-section hidden">
+        <!-- PAGINA MIEMBROS-->
+
+<section class="Producto_imagen_inicial">
+
+</section>
+
+<h1 class="Miembros_titulo">MEMBERS</h1>
+
+<section id="miembros" class="Cuadros_miembros"> 
+
+    <div class="Miembro_cuadro">
+        <img src="miembros/isis foto.jpg" alt="" class="Imagen_miembro">
+        <div class="Miembro_texto">
+            <h1 class="Nombre_miembro"> Isis Yasmin Ardon Estrada </h1>
+        </div>
+    </div>
+
+    <div class="Miembro_cuadro">
+        <img src="miembros/douglas.jpeg" alt="" class="Imagen_miembro">
+        <div class="Miembro_texto">
+            <h1 class="Nombre_miembro"> Douglas De Jesus Salazar Colocho </h1>
+        </div>
+    </div>
+
+    <div class="Miembro_cuadro">
+        <img src="miembros/ronny foto.jpg" alt="" class="Imagen_miembro">
+        <div class="Miembro_texto">
+            <h1 class="Nombre_miembro"> Ronny Joshua Mejía Alvarado </h1>
+        </div>
+    </div>
+
+    <div class="Miembro_cuadro">
+        <img src="miembros/angel foto.jpg" alt="" class="Imagen_miembro">
+        <div class="Miembro_texto">
+            <h1 class="Nombre_miembro">Angel Jasser Jovel Mancia</h1>
+        </div>
+    </div>
+
+    <div class="Miembro_cuadro">
+        <img src="miembros/nayeli foto.jpg" alt="" class="Imagen_miembro">
+        <div class="Miembro_texto">
+            <h1 class="Nombre_miembro"> Nayeli Sarai Hernandez Santos </h1>
+        </div>
+    </div>
+
+    <div class="Miembro_cuadro">
+        <img src="miembros/rivera foto.jpg" alt="" class="Imagen_miembro">
+        <div class="Miembro_texto">
+            <h1 class="Nombre_miembro"> Miguel Angel Rivera Barrera </h1>
+        </div>
+    </div>
+</section>
+<main>
+    <h2>Contact us</h2>
+    <div id="message" style="display: none;"></div> <!-- Contenedor para mensajes -->
+    <form id="contact-form">
+        <input type="hidden" name="contact_number" value="697483">
+        <label>Name</label>
+        <input type="text" name="user_name" required>
+        <label>Email</label>
+        <input type="email" name="user_email" required>
+        <label>Message</label>
+        <textarea name="message" required></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+<style>
+    *.contact-form{
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        background-color: #520247; /* Fondo negro */
+        color: #ffffff; /* Color de texto blanco */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    main {
+        background: #fff;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        width: 90%;
+        max-width: 600px;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #11055c; /* Color atractivo para el encabezado */
+    }
+    
+    label {
+        display: block;
+        margin: 10px 0 5px;
+        font-size: 1em;
+        color: #29099b; /* Color de texto para las etiquetas */
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 8px rgb(73, 67, 67) double;
+        border-radius: 10px;
+        background-color:transparent; /* Fondo blanco para campos */
+        color: #333; /* Color de texto para campos */
+        font-size: 1em;
+        transition: background 0.3s ease;
+    }
+    
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+        background-color: #f0f0f0; /* Cambio de color al enfocar */
+        outline: none; /* Quitar el borde al enfocar */
+    }
+    
+    textarea {
+        resize: none; /* Evitar que el textarea cambie de tamaño */
+        height: 100px; /* Altura fija para el textarea */
+    }
+    
+    input[type="submit"] {
+        background: linear-gradient(135deg, rgb(3, 13, 160), rgb(146, 22, 170)); /* Degradado de colores para el botón */
+        color: #fcfcfa;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 25px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    
+    input[type="submit"]:hover {
+        background: linear-gradient(135deg, #f79, #f06); /* Inversión de colores al pasar el ratón */
+    }
+    
+    #message {
+        margin: 20px 0;
+        padding: 10px;
+        border-radius: 5px;
+        display: none; /* Oculto por defecto */
+    }
+    
+    #message.success {
+        background-color: #9aeabc; /* Verde claro para éxito */
+        color: #333;
+    }
+    
+    #message.error {
+        background-color: #ff9393; /* Rojo claro para error */
+        color: #333;
+    }
+</style>
+ </main>
+
+<!-- FIN PAGINA MIEMBROS -->
+    </section>
+
+    <section id="oportunidades" class="content-section hidden">
+        <h2>Career Opportunities</h2>
+        <p>Explore the career opportunities we offer.</p>
+    </section>
+
+    <section id="contactanos" class="content-section hidden">
+        <h2>Contact us</h2>
+        <p>Get in touch with us for more information.</p>
+    </section>
+    <!--Parte del quiz-->
+<section class="body">
+    <!-- Cuadro inicial pequeño -->
+    <div id="mini-quiz" class="mini-app" onclick="toggleQuiz()">
+        <h1>Expand and test your knowledge</h1>
+    </div>
+
+    <!-- Cuadro del Quizbot que estará oculto al inicio -->
+    <div id="full-quiz" class="app hidden">
+        <h1>Quizbots</h1>
+        <div class="quiz">
+            <h2 id="question">Questions and answers here</h2>
+            <div id="answer-buttons">
+              <button class="btn">respuesta 1</button>
+              <button class="btn">respuesta 2</button>
+              <button class="btn">respuesta 3</button>
+              <button class="btn">respuesta 4</button>
+            </div>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+
+    <style>
+        /* Estilo para el cuadro pequeño */
+        .mini-app {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 200px; /* Ancho más pequeño */
+            background-color:transparent;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .mini-app h1 {
+            font-size: 16px;
+            color: hsl(14, 82%, 38%);
+            font-weight: 700;
+        }
+
+        /* Estilo del Quizbot que estará oculto inicialmente */
+        .app.hidden {
+            display: none;
+        }
+
+        .app {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 300px;
+            background-color:#fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .quiz h2 {
+            font-size: 18px;
+            color: hsl(344, 97%, 29%);
+            font-weight: 600;
+        }
+
+        .btn {
+            background: transparent;
+            color: #222;
+            font-weight: 500;
+            width: 100%;
+            border: 1px solid #222;
+            padding: 10px;
+            margin: 8px 0;
+            text-align: center;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn:hover:not([disabled]) {
+            background: #222;
+            color: #fff;
+        }
+
+        #next-btn {
+            background: hsl(334, 81%, 27%);
+            color: #fff;
+            font-weight: 600;
+            width: 120px;
+            border: 0;
+            padding: 10px;
+            margin: 20px auto;
+            border-radius: 8px;
+            cursor: pointer;
+            display: none;
+            transition: background 0.3s ease;
+        }
+
+        #next-btn:hover {
+            background: hsl(334, 81%, 37%);
+        }
+        
+.correct {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.incorrect {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+    </style>
+
+    <script>
+        // Función para alternar entre el cuadro pequeño y el quiz completo
+        function toggleQuiz() {
+            var miniQuiz = document.getElementById('mini-quiz');
+            var fullQuiz = document.getElementById('full-quiz');
+
+            // Oculta el cuadro pequeño y muestra el quiz completo
+            miniQuiz.classList.toggle('hidden');
+            fullQuiz.classList.toggle('hidden');
+        }
+    </script>
+</section>
+
+<!--parte final del quiz-->
+</section>
+
+</body>
+</html>

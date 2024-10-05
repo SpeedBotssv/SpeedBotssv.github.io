@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rajdhani:wght@300;400;500;600;700&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <script src="java.js" defer></script>
+    <script src="scriptt.js" defer></script>
+    <title>SmartDrive</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({ publicKey: "SIz-SmSVAee0F1GSa" });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('service_7wh98fp', 'contact_form', this)
+                    .then(() => {
+                        showMessage('Gracias por contactarnos. Te responderemos pronto.', 'success');
+                    }, (error) => {
+                        showMessage('Error al enviar el mensaje. Por favor, inténtalo de nuevo.', 'error');
+                    });
+            });
+        }
+
+        function showMessage(message, type) {
+            const messageContainer = document.getElementById('message');
+            messageContainer.textContent = message;
+            messageContainer.className = type; // Añadir clase para estilos
+            messageContainer.style.display = 'block'; // Mostrar el mensaje
+        }
+    </script>
+</head>
+<body>
+    <!-- Encabezado principal -->
+    <header>
+        <section class="Encabezado_global" >
+
+            <div class="Contenedor_imagen_encabezado">
+                <img class="Imagen_encabezado" src="Imagenes/SD White.png" alt="">
+            </div>
+    
+            <div class="lenguaje">
+                <a href="index22.html" class="en_language">Español</a>
+                <a href="index33.html" class="en_language">Ingles</a>
+            </div>
+    
+            
+    
+        </section>
+       
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="#" onclick="showSection('inicio')">Inicio</a></li>
+            <li><a href="#" onclick="showSection('producto')">Producto</a></li>
+            <li><a href="#" onclick="showSection('miembros')">Miembros</a></li>
+    
+        </ul>
+    </nav>
+    
+
+    <!-- Contenido de la página -->
+    <section id="inicio" class="content-section visible">
+        <section class="Imagen_subpagina_inicio">
+            <div class="Titulos_subinicio"> 
+                <h1 class="Titulo_Speedbots_subinicio">SPEEDBOTS </h1>
+                <p class="Subtitulo_subinicio">Seguridad sobre ruedas </p>
+            </div>
+    
+           
+        </section>
+        <section id="inicio" class="Pagina_inicio">
+
+            <section class="Cuadros_inicio">
+        
+                <div class="Cuadro_quienes_somos">
+                    <h1 class="Quienes_somos"> ¿QUIÉNES SOMOS? </h1>
+                    <img class="Quienes_somos_imagen" src="Imagenes/Grupo.png" alt="Quienes_somos_imagen">
+                    <p class="Quienes_somos_parrafo"> En Smart Drive, somos un equipo comprometido con la innovación y la seguridad vial. Nuestro enfoque está en crear soluciones tecnológicas prácticas, como SpeedBots, un vehículo inteligente diseñado para frenar automáticamente al detectar obstáculos, promoviendo así la seguridad en las vías. Creemos que la tecnología puede transformar la forma en que nos movemos y mejorar nuestra calidad de vida. </p>
+                </div>
+        
+                <section class="Fila_mision_vision">
+                    <div class="Cuadro_Mision">
+                        <h1 class="Mision"> MISIÓN </h1>
+                        <img class="Mision_imagen" src="Imagenes/Diana.png" alt="Mision_imagen">
+                        <p class="Mision_parrafo"> Desarrollar soluciones tecnológicas innovadoras que aporten una mejora a la seguridad vial optimizando la movilidad urbana a través de la integración de tecnologías avanzadas, buscando contribuir a la creación de un entorno de conducción más seguro y eficiente. </p>
+                    </div>
+        
+                    <div class="Cuadro_Vision">  
+                        <h1 class="Vision"> VISIÓN </h1>
+                        <img class="Vision_imagen" src="Imagenes/Ojo.png" alt="Vision_imagen">
+                        <p class="Vision_parrafo"> Ser líderes en la creación de tecnologias para la movilidad inteligente que ayuden a transformar la seguridad vial y la experiencia de conducción. Aspiramos a ser reconocidos por nuestra capacidad para innovar y aplicar soluciones tecnológicas que hagan una diferencia significativa en la seguridad vial </p>
+                    </div>
+        
+    </section>
+
+</section>
+
+</section>
+    </style>
+</section>
+
+<hr> <!-- Separador mientras no se utiliza CSS, luego borrar -->
+<!-- FIN PAGINA INICIO -->
+
+    <section id="producto" class="content-section hidden">
+        <section id="producto" class="Pagina_producto">
+
+            
+                
+            </section>
+        
+            <h1 class="Titulo_producto">SPEEDBOTS</h1>
+        
+            <section class="Cuadros_de_informacion_producto">
+                <div class="Contenedor_producto">
+                    <img class="Imagen_producto_uno" src="Imagenes/speed2.jpg" alt="SpeedBot">
+                    <p class="Texto_producto_uno">
+                        El SpeedBot está diseñado para promover la seguridad vial a través de la tecnología. 
+                        Equipado con un sensor ultrasónico avanzado, el vehículo es capaz de detectar cualquier objeto a 20 cm de distancia. 
+                        Una vez que identifica un obstáculo, el auto frena de inmediato, evitando colisiones potenciales. 
+                        Además de su capacidad de frenado automático, el SpeedBot utiliza un sistema de toma de decisiones inteligente: 
+                        después de frenar, evalúa el espacio disponible a su alrededor, girando hacia el lado que esté libre de obstrucciones. 
+                        Esta capacidad es ideal para entornos de tráfico denso, brindando mayor seguridad en la conducción.
+                    </p>
+                </div>
+        
+                <div class="Contenedor_producto reverse">
+                    <p class="Texto_producto_Dos">
+                        El SpeedBot también incluye la funcionalidad de control remoto a través de una aplicación móvil que hemos desarrollado. 
+                        Con la app, el usuario puede manejar el auto con precisión, lo que lo convierte en una herramienta útil tanto para la práctica de manejo seguro 
+                        como para la exploración de su tecnología en espacios controlados. Su diseño combina un chasis robusto y un servomotor que asegura giros eficientes y suaves. 
+                        Este auto es una herramienta práctica y educativa que, además de su funcionalidad en seguridad vial, ofrece una experiencia interactiva para quienes deseen aprender más sobre tecnologías de conducción automatizada.
+                    </p>
+                    <img class="Imagen_producto_dos" src="Imagenes/speed3.jpg" alt="SpeedBot Control Remoto">
+                </div>
+            </section>
+        
+            <section class="Materiales_seccion">
+                <h1 class="Materiales_titulo">MATERIALES</h1>
+                
+                <div class="Material_grid">
+                    <div class="Material_item">
+                        <h1 class="Material_uno_dentro">CHASIS</h1>
+                        <img class="Material_uno_imagen" src="Imagenes/chasis.jpg" alt="Chasis">
+                        <p class="Parrafo_material_uno">Chasis de plástico resistente para garantizar ligereza y durabilidad. Utilicé estructuras de soporte adicionales para asegurar los motores y otros componentes de forma firme.</p>
+                    </div>
+        
+                    <div class="Material_item">
+                        <h1 class="Material_dos_dentro">RUEDAS</h1>
+                        <img class="Material_dos_imagen" src="Imagenes/Ruedas.jpg" alt="Ruedas">
+                        <p class="Parrafo_material_dos">Ruedas robustas adecuadas para terrenos variados, asegurándose de que los ejes fueran lo suficientemente fuertes para soportar el peso del vehículo y los movimientos bruscos.</p>
+                    </div>
+        
+                    <div class="Material_item">
+                        <h1 class="Material_tres_dentro">BLUETOOTH</h1>
+                        <img class="Material_tres_imagen" src="Imagenes/Bluetooth.jpg" alt="Bluetooth">
+                        <p class="Parrafo_material_tres">Módulo Bluetooth para el control remoto, asegurando una comunicación estable y eficiente dentro del área de operación deseada.</p>
+                    </div>
+        
+                    <div class="Material_item">
+                        <h1 class="Material_cuatro_dentro">ARDUINO</h1>
+                        <img class="Material_cuatro_imagen" src="Imagenes/Arduino.jpg" alt="Arduino">
+                        <p class="Parrafo_material_cuatro">Arduino Uno simplifica la configuración y la programación. Este Arduino controla tanto el movimiento del vehículo como el sistema de detección automática.</p>
+                    </div>
+        
+                    <div class="Material_item">
+                        <h1 class="Material_cinco_dentro">PUENTE H</h1>
+                        <img class="Material_cinco_imagen" src="Imagenes/Puente H L298N.jpg" alt="Puente H">
+                        <p class="Parrafo_material_cinco">Inverte la polaridad de la corriente que llega al motor, lo que hace que el motor cambie de dirección. Esto es esencial para un carro a control remoto, ya que permite que el vehículo avance o retroceda según sea necesario.</p>
+                    </div>
+        
+                    <div class="Material_item">
+                        <h1 class="Material_seis_dentro">MOTORES</h1>
+                        <img class="Material_seis_imagen" src="Imagenes/Motores DC.jpg" alt="Motores DC">
+                        <p class="Parrafo_material_seis">Motores DC para la propulsión, implementando un puente H para controlar la dirección de giro. Esto permite que se muevan hacia adelante y hacia atrás utilizando el chip L293D.</p>
+                    </div>
+        
+                    <div class="Material_item">
+                        <h1 class="Material_siete_dentro">SERVOMOTOR</h1>
+                        <img class="Material_siete_imagen" src="Imagenes/Servomotor.jpg" alt="Servomotor">
+                        <p class="Parrafo_material_siete">Recibe la información enviada de los pines permitiéndole así dar la orden a las ruedas de moverse en el sentido y a la velocidad que se le está requiriendo.</p>
+                    </div>
+        
+                    <div class="Material_item">
+                        <h1 class="Material_ocho_dentro">SENSOR ULTRASONICO</h1>
+                        <img class="Material_ocho_imagen" src="Imagenes/Sensor.jpg" alt="Sensor Ultrasonico">
+                        <p class="Parrafo_material_ocho">Sensor PIR para la detección automática de obstáculos y otros vehículos. Ajustamos los parámetros de sensibilidad para respuestas rápidas y precisas durante las pruebas.</p>
+                    </div>
+        
+                    <div class="Material_item">
+                        <h1 class="Material_nueve_dentro">BATERÍAS</h1>
+                        <img class="Material_nueve_imagen" src="Imagenes/Baterias Recargables.jpg" alt="Baterías Recargables">
+                        <p class="Parrafo_material_nueve">Baterías recargables para alimentar el Arduino y los motores, calculando correctamente la capacidad de la batería para mantener la duración operativa deseada.</p>
+                    </div>
+                </div>
+        
+                <section class="Cuadro descarga">
+                    <h1 class="Titulo_cuadro_descarga">APLICACIÓN</h1>
+                    <p class="Parrafo_cuadro_descarga">A través del siguiente botón, puedes descargar la aplicación de control remoto para SpeedBots.</p>
+                    <a href="Imagenes/Arduino.jpg" class="Boton_descarga_cuadro" download="">DESCARGAR</a>
+                </section>
+            </section>
+        </section>
+        
+    </section>
+
+    <section id="miembros" class="content-section hidden">
+        <!-- PAGINA MIEMBROS-->
+
+<section class="Producto_imagen_inicial">
+
+</section>
+
+<h1 class="Miembros_titulo"> MIEMBROS </h1>
+
+<section id="miembros" class="Cuadros_miembros"> 
+
+    <div class="Miembro_cuadro">
+        <img src="miembros/isis foto.jpg" alt="" class="Imagen_miembro">
+        <div class="Miembro_texto">
+            <h1 class="Nombre_miembro"> Isis Yasmin Ardon Estrada </h1>
+        </div>
+    </div>
+
+    <div class="Miembro_cuadro">
+        <img src="miembros/douglas.jpeg" alt="" class="Imagen_miembro">
+        <div class="Miembro_texto">
+            <h1 class="Nombre_miembro"> Douglas De Jesus Salazar Colocho </h1>
+        </div>
+    </div>
+
+    <div class="Miembro_cuadro">
+        <img src="miembros/ronny foto.jpg" alt="" class="Imagen_miembro">
+        <div class="Miembro_texto">
+            <h1 class="Nombre_miembro"> Ronny Joshua Mejía Alvarado </h1>
+        </div>
+    </div>
+
+    <div class="Miembro_cuadro">
+        <img src="miembros/angel foto.jpg" alt="" class="Imagen_miembro">
+        <div class="Miembro_texto">
+            <h1 class="Nombre_miembro">Angel Jasser Jovel Mancia</h1>
+        </div>
+    </div>
+
+    <div class="Miembro_cuadro">
+        <img src="miembros/nayeli foto.jpg" alt="" class="Imagen_miembro">
+        <div class="Miembro_texto">
+            <h1 class="Nombre_miembro"> Nayeli Sarai Hernandez Santos </h1>
+        </div>
+    </div>
+
+    <div class="Miembro_cuadro">
+        <img src="miembros/rivera foto.jpg" alt="" class="Imagen_miembro">
+        <div class="Miembro_texto">
+            <h1 class="Nombre_miembro"> Miguel Angel Rivera Barrera </h1>
+        </div>
+    </div>
+</section>
+<main>
+    <h2>Contáctanos</h2>
+    <div id="message" style="display: none;"></div> <!-- Contenedor para mensajes -->
+    <form id="contact-form">
+        <input type="hidden" name="contact_number" value="697483">
+        <label>Nombre</label>
+        <input type="text" name="user_name" required>
+        <label>Email</label>
+        <input type="email" name="user_email" required>
+        <label>Mensaje</label>
+        <textarea name="message" required></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+<style>
+    *.contact-form{
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        background-color: #520247; /* Fondo negro */
+        color: #ffffff; /* Color de texto blanco */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    main {
+        background: #fff;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        width: 90%;
+        max-width: 600px;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #11055c; /* Color atractivo para el encabezado */
+    }
+    
+    label {
+        display: block;
+        margin: 10px 0 5px;
+        font-size: 1em;
+        color: #29099b; /* Color de texto para las etiquetas */
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 8px rgb(73, 67, 67) double;
+        border-radius: 10px;
+        background-color:transparent; /* Fondo blanco para campos */
+        color: #333; /* Color de texto para campos */
+        font-size: 1em;
+        transition: background 0.3s ease;
+    }
+    
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+        background-color: #f0f0f0; /* Cambio de color al enfocar */
+        outline: none; /* Quitar el borde al enfocar */
+    }
+    
+    textarea {
+        resize: none; /* Evitar que el textarea cambie de tamaño */
+        height: 100px; /* Altura fija para el textarea */
+    }
+    
+    input[type="submit"] {
+        background: linear-gradient(135deg, rgb(3, 13, 160), rgb(146, 22, 170)); /* Degradado de colores para el botón */
+        color: #fcfcfa;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 25px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    
+    input[type="submit"]:hover {
+        background: linear-gradient(135deg, #f79, #f06); /* Inversión de colores al pasar el ratón */
+    }
+    
+    #message {
+        margin: 20px 0;
+        padding: 10px;
+        border-radius: 5px;
+        display: none; /* Oculto por defecto */
+    }
+    
+    #message.success {
+        background-color: #9aeabc; /* Verde claro para éxito */
+        color: #333;
+    }
+    
+    #message.error {
+        background-color: #ff9393; /* Rojo claro para error */
+        color: #333;
+    }
+</style>
+ </main>
+
+<!-- FIN PAGINA MIEMBROS -->
+    </section>
+
+    <section id="oportunidades" class="content-section hidden">
+        <h2>Oportunidades de Carrera</h2>
+        <p>Explora las oportunidades de carrera que te ofrecemos.</p>
+    </section>
+
+    <section id="contactanos" class="content-section hidden">
+        <h2>Contáctanos</h2>
+        <p>Ponte en contacto con nosotros para más información.</p>
+    </section>
+
+    <!--Parte del quiz-->
+<section class="body">
+    <!-- Cuadro inicial pequeño -->
+    <div id="mini-quiz" class="mini-app" onclick="toggleQuiz()">
+        <h1>Expande y pon a prueba tus conocimientos </h1>
+    </div>
+
+    <!-- Cuadro del Quizbot que estará oculto al inicio -->
+    <div id="full-quiz" class="app hidden">
+        <h1>Quizbots</h1>
+        <div class="quiz">
+            <h2 id="question">Preguntas y respuestas aquí</h2>
+            <div id="answer-buttons">
+              <button class="btn">respuesta 1</button>
+              <button class="btn">respuesta 2</button>
+              <button class="btn">respuesta 3</button>
+              <button class="btn">respuesta 4</button>
+            </div>
+            <button id="next-btn">Siguiente</button>
+        </div>
+    </div>
+
+    <style>
+        /* Estilo para el cuadro pequeño */
+        .mini-app {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 200px; /* Ancho más pequeño */
+            background-color:transparent;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .mini-app h1 {
+            font-size: 16px;
+            color: hsl(14, 82%, 38%);
+            font-weight: 700;
+        }
+
+        /* Estilo del Quizbot que estará oculto inicialmente */
+        .app.hidden {
+            display: none;
+        }
+
+        .app {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 300px;
+            background-color:#fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .quiz h2 {
+            font-size: 18px;
+            color: hsl(344, 97%, 29%);
+            font-weight: 600;
+        }
+
+        .btn {
+            background: transparent;
+            color: #222;
+            font-weight: 500;
+            width: 100%;
+            border: 1px solid #222;
+            padding: 10px;
+            margin: 8px 0;
+            text-align: center;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn:hover:not([disabled]) {
+            background: #222;
+            color: #fff;
+        }
+
+        #next-btn {
+            background: hsl(334, 81%, 27%);
+            color: #fff;
+            font-weight: 600;
+            width: 120px;
+            border: 0;
+            padding: 10px;
+            margin: 20px auto;
+            border-radius: 8px;
+            cursor: pointer;
+            display: none;
+            transition: background 0.3s ease;
+        }
+
+        #next-btn:hover {
+            background: hsl(334, 81%, 37%);
+        }
+        
+.correct {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.incorrect {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+    </style>
+
+    <script>
+        // Función para alternar entre el cuadro pequeño y el quiz completo
+        function toggleQuiz() {
+            var miniQuiz = document.getElementById('mini-quiz');
+            var fullQuiz = document.getElementById('full-quiz');
+
+            // Oculta el cuadro pequeño y muestra el quiz completo
+            miniQuiz.classList.toggle('hidden');
+            fullQuiz.classList.toggle('hidden');
+        }
+    </script>
+</section>
+<!--parte final del quiz-->
+</section>
+
+</body>
+</html>

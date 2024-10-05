@@ -1,0 +1,625 @@
+/* estilos responsivos */
+/* Estilo para pantallas grandes (escritorio) */
+@media screen and (min-width: 1024px) {
+    .container {
+      width: 70%;
+      padding: 3rem;
+    }
+  }
+  
+  /* Estilo para tablets (pantallas medianas) */
+  @media screen and (max-width: 1023px) and (min-width: 768px) {
+    .container {
+      width: 85%;
+      padding: 2rem;
+    }
+  }
+  
+  /* Estilo para móviles (pantallas pequeñas) */
+  @media screen and (max-width: 767px) {
+    .container {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffff, #ffff); /* Degradado verde a negro */
+}
+
+header {
+    background-color: #000000; /* Gris oscuro para el encabezado */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header .subtitulo {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+nav {
+    background-color: #000000; /* Gris aún más oscuro para la barra de navegación */
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar li a {
+    color: rgba(255, 255, 255, 0.845);
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+}
+
+.navbar li a:hover {
+    background-color: #222222; /* Tono gris más oscuro al pasar el cursor */
+}
+
+section {
+    padding: 15px;
+    margin: 10px auto 60px; /* Ajuste de margen inferior para evitar superposición con el footer */
+    max-width: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    
+}
+
+/* ENCABEZADO */
+
+.Encabezado_global{
+    background-color: black;
+    height: 140px;
+}
+
+.Contenedor_imagen_encabezado{
+    text-align: center;
+    margin-left: 30px;
+}
+
+.Imagen_encabezado{
+    margin-top: 20px;
+    width: 170px;
+    height: 170px;
+}
+
+.Navegacion_paginas{
+    position: relative;
+}
+
+.Navegacion_paginas .Item_lista{
+    display: inline-block;
+    margin: 30px;
+    background-color: white;
+    width: 80px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.lista{
+    text-align: center;
+}
+
+
+
+
+
+.Lista_link:hover {
+    color: blue;
+    width: 400px;
+    height: 400px;
+}
+
+/* FIN ENCABEZADO */
+
+/* SUB INICIO */
+
+.Imagen_subpagina_inicio {
+    background-image: url('Imagenes/speedyblanco.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    position: relative;
+}
+
+
+.Titulos_subinicio {
+    text-align: center;
+    margin-top: 30px; 
+    font-family: "Open Sans";
+}
+
+.Titulo_Speedbots_subinicio {
+    font-size: 60px;
+    color: black;
+    margin: 0px;
+    font-family: "Open Sans";
+}
+
+.Subtitulo_subinicio {
+    font-size: 25px;
+    color: black;
+    margin-top: 10px;
+}
+
+
+.Boton_info {
+    margin-bottom: center 50px; 
+}
+
+.Mas_informacion {
+    background-position: center;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.Mas_informacion:hover {
+    background-position: center;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+/* FIN SUBINICIO */
+
+/* INICIO */
+
+.Cuadros_inicio {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 150px;
+}
+
+.Cuadro_quienes_somos {
+    text-align: center;
+    height: 750px;
+    width: 600px;
+    background-color: white;
+    border: dotted #4e414171;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-bottom: 120px;
+}
+
+.Quienes_somos_imagen {
+    width: 150px;
+    height: 150px;
+}
+
+.Mision_imagen{
+    width: 150px;
+    height: 150px;
+}
+
+.Vision_imagen{
+    width: 150px;
+    height: 150px;
+}
+
+.Fila_mision_vision {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    width: 100%;
+    max-width: 900px; 
+}
+
+.Cuadro_Mision, .Cuadro_Vision {
+    text-align: center;
+    height: 620px;
+    width: 600px;
+    background-color: white;
+    border: dotted #4e414171;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    flex-shrink: 0; 
+    
+}
+
+.open-sans-uniquifier{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+  
+.Quienes_somos{
+    font-size: 45px;
+    font-family: "Open Sans";
+}
+
+.Quienes_somos_parrafo{
+    font-size: 30px;
+    margin: 5px 0 0;
+    font-family: "Rajdhani"; 
+}
+
+.Mision{
+    font-size: 45px;
+    margin-top: 30px;
+    font-family: "Open Sans";
+}
+
+.Mision_parrafo{
+    font-size: 30px;
+    margin: 5px 0 0; 
+    font-family: "Rajdhani";
+}
+
+.Vision{
+    font-size: 45px;
+    margin-top: 30px;
+    font-family: "Open Sans";
+}
+
+.Vision_parrafo{
+    font-size: 30px;
+    margin: 5px 0 0; 
+    font-family: "Rajdhani";
+}
+/* inicio ccs del quiz*/
+
+/*Fin del css del quiz*/
+
+/* FIN INICIO */
+
+/* PRODUCtO */
+
+.content-section hidden {
+    background-image: url('Imagenes/speedbots_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    width: 98vw; 
+    height: 200px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    padding-bottom: 50px;
+}
+
+.Titulo_producto{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 45px;
+    color: white;
+    background-color: black;
+    border-radius: 40px;
+    font-family: "Open Sans";
+}
+
+.Cuadros_de_informacion_producto {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Imagen_producto_uno {
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    object-fit: cover;
+    margin-left: 40px;
+}
+
+.Imagen_producto_dos {
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    object-fit: cover;
+    margin-right: 40px;
+}
+
+.Contenedor_producto {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    max-width: 1500px;
+    width: 100%;
+    height: auto;
+    font-family: "Rajdhani";
+    overflow-x: hidden; /* Evita que el contenido se desborde horizontalmente */
+  }
+  
+  .Texto_producto_uno, .Texto_producto_Dos {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    width: 100%; 
+    margin-left: 40px;
+    margin-right: 40px;
+    overflow-x: hidden;
+  }
+  
+.Materiales_titulo{
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    background-color: black;
+    border-radius: 40px;
+    font-family: "Open Sans";
+}
+
+.Materiales_seccion {
+    padding: 20px;
+    text-align: center;
+}
+
+.Materiales_titulo {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.Material_grid {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.Material_item {
+    background-color: #f8f8f8; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 10px; 
+    width: calc(50% - 20px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+    box-sizing: border-box; 
+}
+
+.Material_item img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 4px; 
+}
+
+.Titulo_cuadro_descarga {
+    font-size: 4.0em;
+    margin: 20px 0;
+    font-family: "Open Sans";
+}
+
+.Parrafo_cuadro_descarga {
+    margin: 10px 0;
+    font-size: 2.0em;
+    margin-top: 3%;
+    font-family: "Rajdhani";
+}
+
+.Boton_descarga_cuadro {
+    font-family: "Open Sans";
+    display: inline-block;
+    background-color: #007bff; 
+    color: white; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 50px;
+    width: 250px;
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.Boton_descarga_cuadro:hover {
+    background-color: #0056b3;
+}
+
+.Material_uno_imagen{
+    height: 500px;
+    width: 500px;
+}
+
+.Material_dos_imagen{
+    height: 500px;
+    width: 500px;
+}
+
+.Material_tres_imagen{
+    height: 500px;
+    width: 500px;
+}
+
+.Material_cuatro_imagen{
+    height: 500px;
+    width: 500px;
+}
+
+.Material_cinco_imagen{
+    height: 500px;
+    width: 500px;
+}
+
+.Material_seis_imagen{
+    height: 500px;
+    width: 500px;
+}
+
+.Material_siete_imagen{
+    height: 600px;
+    width: 600px;
+}
+
+.Material_ocho_imagen{
+    height: 500px;
+    width: 500px;
+}
+
+.Material_uno_dentro, .Material_dos_dentro, .Material_tres_dentro, .Material_cuatro_dentro, .Material_cinco_dentro, .Material_seis_dentro, .Material_siete_dentro, .Material_ocho_dentro{
+    font-size: 30px;
+    font-family: "Open Sans";
+}
+
+.Parrafo_material_uno, .Parrafo_material_dos, .Parrafo_material_tres, .Parrafo_material_cuatro, .Parrafo_material_cinco, .Parrafo_material_seis, .Parrafo_material_siete, .Parrafo_material_ocho {
+    font-size: 25px;
+    font-family: "Rajdhani";
+}
+
+
+/* FIN PRODUCTO */
+
+/* MIEMBROS */
+
+.Miembros_titulo{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 45px;
+    color: white;
+    background-color: black;
+    border-radius: 40px;
+    font-family: "Open Sans";
+}
+
+.Cuadros_miembros {
+    padding: 50px;
+}
+
+.Miembro_cuadro {
+    display: flex; 
+    align-items: center; 
+    background-color: #f8f8f8; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 30px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    height: 100px;
+}
+
+.Imagen_miembro {
+    width: 130px; 
+    height: 130px; 
+    border-radius: 50%; 
+    margin-right: 20px; 
+}
+
+.Nombre_miembro {
+    font-size: 1.5em; 
+    margin: 0; 
+    font-family: "Open Sans";
+}
+
+.Parrafo_miembro {
+    margin: 5px 0 0; 
+    color: #666; 
+}
+
+.Miembro_texto {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* FIN MIEMBROS */
+
+/* Idioma */
+.lenguaje {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px; /* Posicionamiento en la esquina superior derecha */
+  }
+
+.en_language{    
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
+}
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background:rgb(255, 255, 255);
+    border-radius: 25px;
+    transition: 0.25px;
+    border: 2px solid rgb(255, 255, 255);
+    box-sizing: border-box;  
+}
+.check:checked:after{
+    left: 25px;
+    border: 2px solid rgb(245, 245, 245);
+}
+.check:checked:before{
+    background: rgb(8, 87, 189);
+}
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar li a {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header .subtitulo {
+        font-size: 1em;
+    }
+}
+
+
