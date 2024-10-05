@@ -27,11 +27,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #ffff, #ffff); /* Degradado verde a negro */
+    background: linear-gradient(to bottom, #ffff, #ffff);
 }
 
 header {
-    background-color: #000000; /* Gris oscuro para el encabezado */
+    background-color: #000000; 
     color: white;
     text-align: center;
     padding: 20px;
@@ -48,7 +48,7 @@ header .subtitulo {
 }
 
 nav {
-    background-color: #000000; /* Gris aún más oscuro para la barra de navegación */
+    background-color: #000000; 
 }
 
 .navbar {
@@ -73,7 +73,7 @@ nav {
 }
 
 .navbar li a:hover {
-    background-color: #222222; /* Tono gris más oscuro al pasar el cursor */
+    background-color: #222222; 
 }
 
 section {
@@ -884,3 +884,5 @@ section {
         font-size: 1em;
     }
 }
+
+
